@@ -9,7 +9,7 @@
 let arr = [1, 3, 1, 2, 5, 6, 3];
 let occurrences = {};
 
-arr.map((elem) => {
+arr.forEach((elem) => {
   if (occurrences.hasOwnProperty(elem)) {
     occurrences[elem]++;
   } else {
