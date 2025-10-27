@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        padding-top: 3rem;
+        background-color: gray;
+      }
+      .gray-btn {
+        background-color: gray;
+      }
+      .orange-btn {
+        background-color: orange;
+      }
+      main {
+        margin: auto;
+        width: 30%;
+        background-color: black;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+      #result-part {
+        width: 100%;
+      }
+      #input-field {
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: black;
+        color: white;
+        text-align: right;
+        font-size: 2.5rem;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        padding: 1.6rem 0rem;
+      }
+      #input-field:focus {
+        outline: none;
+      }
+      #btns-part {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+      button {
+        cursor: pointer;
+        font-size: 1.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        font-weight: 500;
+        border: none;
+        background-color: rgb(56, 56, 56);
+        color: white;
+      }
+      button:hover {
+        filter: invert();
+      }
+      #btn-12rem {
+        width: 12rem;
+        border-radius: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div id="result-part">
+          <input type="text" name="input-field" id="input-field" readonly />
+        </div>
+        <div id="btns-part">
+          <button class="gray-btn">AC</button
+          ><button class="gray-btn">DEL</button
+          ><button class="gray-btn">%</button
+          ><button class="orange-btn">/</button><button>7</button
+          ><button>8</button><button>9</button
+          ><button class="orange-btn">*</button><button>4</button
+          ><button>5</button><button>6</button
+          ><button class="orange-btn">-</button><button>1</button
+          ><button>2</button><button>3</button
+          ><button class="orange-btn">+</button><button id="btn-12rem">0</button
+          ><button>.</button><button class="orange-btn">=</button>
+        </div>
+      </main>
+    </div>
+    <script src="medium-10.js"></script>
+  </body>
+</html>
