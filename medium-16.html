@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        border-radius: 1.5rem;
+        width: 50%;
+        padding: 2rem;
+        background-color: rgb(244, 244, 205);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.6rem;
+      }
+      .about-quote .quote {
+        text-align: center;
+        font-size: 1.7rem;
+      }
+      .about-quote .author {
+        padding-top: 1rem;
+        font-style: italic;
+        text-align: right;
+      }
+      h1 {
+        font-size: 3rem;
+        border-bottom: 4px solid;
+      }
+      button {
+        font-size: 1.8rem;
+        padding: 0.6rem 1rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: rgba(0, 0, 255, 0.39);
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgba(10, 10, 224, 0.618);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>Generate a random quote</h1>
+        <div class="about-quote">
+          <p class="quote"></p>
+          <p class="author"></p>
+        </div>
+        <button class="quote-generate-btn">Get quote</button>
+      </main>
+    </div>
+    <script src="medium-16.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #431cde84;
+      }
+      main {
+        width: 45%;
+        padding: 5rem;
+        border-radius: 2rem;
+        background-color: aliceblue;
+        box-shadow: 0 10px 20px #431cdeba;
+      }
+      .stop-watch {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+      }
+      .stop-watch p {
+        font-size: 6rem;
+        font-weight: 700;
+      }
+      .start-btn {
+        background-color: rgba(67, 28, 222, 0.519);
+      }
+      .reset-btn {
+        background: rgba(175, 175, 175, 0.33);
+      }
+      .stop-btn {
+        background-color: orangered;
+      }
+      .btns {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+      }
+      .display-none {
+        display: none;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 0.7rem 1.6rem;
+        transition: all 0.15s linear;
+      }
+      button:hover {
+        scale: 0.92;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="stop-watch">
+          <p id="timer">00 : 00 : 00</p>
+        </div>
+        <div class="btns">
+          <button class="reset-btn">
+            <i class="fa-solid fa-arrow-rotate-right"></i> Reset
+          </button>
+          <button class="start-btn">
+            <i class="fa-solid fa-play"></i> Start
+          </button>
+          <button class="stop-btn display-none">
+            <i class="fa-solid fa-stop"></i> Stop
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="medium-14.js"></script>
+  </body>
+</html>

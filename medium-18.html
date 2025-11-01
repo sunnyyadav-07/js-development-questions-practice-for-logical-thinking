@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image carousel</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(33, 33, 130, 0.472);
+      }
+      main {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+      }
+
+      .images {
+        /* position: relative; */
+        display: flex;
+        gap: 0.5rem;
+        width: 80%;
+        overflow: hidden;
+        /* overflow-x: auto; */
+        border-radius: 1rem;
+      }
+      img {
+        /* translate: -100%; */
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        /* position: absolute; */
+        /* z-index: 99999; */
+        border-radius: 1rem;
+      }
+      .left-slider,
+      .right-slider {
+        /* z-index: 999; */
+        font-size: 4.5rem;
+        font-weight: bolder;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="left-slider"><</div>
+        <div class="images">
+          <img
+            src="https://i.pinimg.com/1200x/fb/78/ff/fb78ffa55bf7bedf77f1b957e35b3969.jpg"
+            alt=""
+          />
+        </div>
+        <div class="right-slider">></div>
+      </main>
+    </div>
+    <script src="medium-18.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+      .blur-effect {
+        background-color: rgba(169, 169, 169, 0.786);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .img-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        color: aliceblue;
+        position: absolute;
+        width: 30%;
+        background-color: rgba(0, 0, 139, 0.745);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 10px;
+      }
+      .id {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1rem; */
+        margin-bottom: 0.7rem;
+        font-size: 2rem;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 1rem;
+      }
+      .about p {
+        font-size: 1.5rem;
+      }
+      h3,
+      .id p {
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blur-effect">
+        <div class="card">
+          <div class="img-area">
+            <img
+              src="https://images.unsplash.com/photo-1761165307592-95cdbe1b5864?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+              alt="image"
+              width="100px"
+              height="100px"
+            />
+          </div>
+          <div class="description">
+            <div class="id">
+              <h3>Id :</h3>
+              <p>45</p>
+            </div>
+            <div class="about">
+              <h3>About</h3>
+              <p>
+                About will be here Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Perspiciatis ad facilis eveniet veniam,
+                incidunt enim nostrum officiis rem fuga
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="medium-13-fetch-use.js"></script>
+  </body>
+</html>
