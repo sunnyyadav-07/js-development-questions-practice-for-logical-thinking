@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cadetblue;
+      }
+      form {
+        background-color: rgb(195, 195, 194);
+        width: 35%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        gap: 1rem;
+      }
+      input {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 1.3rem;
+      }
+      label {
+        font-size: 1.5rem;
+      }
+      button {
+        padding: 0.5rem 1.5rem;
+        border: none;
+        color: aliceblue;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background-color: rgba(42, 43, 43, 0.973);
+      }
+      button:hover {
+        background-color: rgb(12, 12, 12);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <label for="user-name">Enter username</label>
+        <input
+          type="text"
+          id="user-name"
+          name="username"
+          placeholder="enter your username"
+        />
+        <span class="name-msg"></span>
+        <label for="user-email">Enter email id</label>
+        <input
+          type="email"
+          id="user-email"
+          name="useremail"
+          placeholder="enter your email id"
+        />
+        <span class="email-msg"></span>
+        <label for="user-number">Enter phone number</label>
+        <input
+          type="tel"
+          id="user-number"
+          name="usernumber"
+          placeholder="enter your phone number"
+        />
+        <span class="number-msg"></span>
+        <label for="user-password">Enter password</label>
+        <input
+          type="text"
+          id="user-password"
+          name="userpassword"
+          placeholder="enter your password"
+        />
+        <span class="password-msg"></span>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="medium-20-form-validation.js"></script>
+  </body>
+</html>

@@ -7,6 +7,7 @@ const resultArea = document.querySelector("#input-field");
 const btns = document.querySelector("#btns-part");
 function btnClicked(event) {
   let clickedBtn = event.target.innerText;
+  console.log(clickedBtn);
   if (clickedBtn === "=") {
     calculate(resultArea.value);
   } else if (clickedBtn === "AC") {
@@ -15,6 +16,7 @@ function btnClicked(event) {
     resultArea.value = resultArea.value.slice(0, -1);
   } else {
     resultArea.value += clickedBtn;
+    console.log(resultArea.value);
   }
 }
 btns.addEventListener("click", btnClicked);

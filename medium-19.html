@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal popup</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gray-layer {
+        background-color: darkgray;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dis-none {
+        display: none;
+      }
+      p {
+        text-align: center;
+      }
+      .modal {
+        background-color: aliceblue;
+        border-radius: 1rem;
+        width: 30%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      button {
+        background-color: blue;
+        border: none;
+        font-size: 1.5rem;
+        color: aliceblue;
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="open-btn">open modal</button>
+      <div class="gray-layer dis-none">
+        <div class="modal">
+          <h1>Modal Popup</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla
+            voluptatibus quisquam ullam at eum error eos reprehenderit vel
+            libero?
+          </p>
+          <button class="cancel-btn">cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="medium-19-modal-popup.js"></script>
+  </body>
+</html>
