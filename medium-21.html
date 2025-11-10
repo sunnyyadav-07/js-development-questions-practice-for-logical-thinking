@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(32, 178, 171, 0.464);
+      }
+      main {
+        border-radius: 2rem;
+        padding: 2rem;
+        width: 50%;
+
+        background-color: antiquewhite;
+      }
+      .counter {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+      }
+      .counter-btns {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      button {
+        font-size: 2.5rem;
+        padding: 0.6rem 1rem;
+        border-radius: 1rem;
+        /* border: 2px solid transparent; */
+        border: none;
+
+        cursor: pointer;
+        background-color: rgba(32, 178, 171, 0.881);
+      }
+      button:hover {
+        /* border-color: blue; */
+        outline: 4px solid rgb(12, 174, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="counter">
+          <h4>Count :</h4>
+
+          <p id="count">0</p>
+        </div>
+        <div class="counter-btns">
+          <button class="increment-btn">Increment</button>
+          <button class="decrement-btn">Decrement</button>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </main>
+    </div>
+    <script src="medium-21-counter-app.js"></script>
+  </body>
+</html>
+!
