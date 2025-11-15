@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme switcher</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s linear;
+        /* background-color: white; */
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        background-color: black;
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .btn-theme {
+        background-color: white;
+        color: black;
+      }
+    </style>
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <button>Dark mode</button>
+    </div>
+    <script src="medium-23-theme-switcher.js"></script>
+  </body>
+</html>
